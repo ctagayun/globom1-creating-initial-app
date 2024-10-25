@@ -1,0 +1,49 @@
+
+Link to PS: https://app.pluralsight.com/ilx/video-courses/fbbac3b2-0e56-464b-92f2-0b877f92f12c/7c99c5ed-967e-43f7-aa55-7cbca139b289/38c3e054-9e72-4047-8789-b873c833c56a
+
+1. Setting up the completed project
+   clone this repo https://github.com/rolandguijt/ps-globomantics-webapi-react
+
+
+    - click clone repository  (completed project)
+    - this React Project is using Vite 
+
+    - after cloning do: 
+        dotnet tool install --global dotnet-ef
+        cd api project
+        dotnet ef database update 
+        run the api 
+        - dotnet run 
+
+        cd to ReactWeb project 
+        - npm install 
+
+     - run the project: npm run dev 
+
+2. Building the React app from scratch
+
+    - see https://app.pluralsight.com/ilx/video-courses/fbbac3b2-0e56-464b-92f2-0b877f92f12c/7c99c5ed-967e-43f7-aa55-7cbca139b289/9f92a0f1-17b4-469f-95d8-624f5adb9542
+    
+    - create react app from scratch 
+        npm create vite@5
+        when prompted enter ReactWeb as project name 
+
+    - npm install    
+    - npm install bootstrap@5
+
+    - import "bootstrap/dist/css/bootstrap.min.css"  in main.tsx
+
+    - add css code to src/main/app.css
+
+    - then create "main" folder and move App.tsx and App.css to this folder
+      and then create Header.tsx and import logo iamge and create a 
+      function component
+
+    - next modify the App.tsx. Copy code from ReactWeb in the completed project
+
+    - modify the port Vite is running from:
+        vite.config --> plugins and the following code:
+          server:{
+           port: 3000,
+           strictPort: true,
+          }   
